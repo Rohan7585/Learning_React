@@ -24,6 +24,11 @@
 - **Setting Up the Development Environment**
   - Installing Node.js and npm
   - Creating a new React application using Create React App
+- **JavaScript Refresher**
+  - ES6+ Features: `let`, `const`, arrow functions, template literals
+  - Destructuring, Rest/Spread operators
+  - Modules: `import` and `export`
+  - Promises and Async/Await
 - **JSX: JavaScript XML**
   - Syntax and usage
   - Embedding expressions in JSX
