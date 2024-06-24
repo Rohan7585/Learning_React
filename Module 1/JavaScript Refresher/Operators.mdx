@@ -1,0 +1,120 @@
+## Operators
+#### Operators perform calculations or comparisons on values:
+
+  - Arithmetic Operators: `+`, `-`, `*`, `/`, `%` (modulo)
+  - Comparison Operators: `==`, `!=`, `===` (strict equality), `!==` (strict inequality), `<`, `>`, `<=`, `>=`
+  - Logical Operators: `&&` (AND), `||` (OR), `!` (NOT)
+  - Assignment Operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=` (shorthand assignments)
+#### Example:
+```JavaScript
+let x = 10;
+let y = 5;
+
+let sum = x + y;
+let difference = x - y;
+let isGreaterThan = x > y;
+
+let isEven = (x % 2) === 0; // Check if a number is even using modulo and strict comparison
+
+let message = "The sum is " + sum;
+console.log(message);
+```
+
+### Comparison Operators
+These operators compare values and return true or false.
+
+  - `==` (Loose Equality): Checks for value equality, allowing type coercion (conversion).
+```JS
+let num1 = 10;
+let string10 = "10";
+
+console.log(num1 == string10); // true (coerces string to number)
+```
+  -  `!=` (Not Equal): The opposite of `==`.
+```JS
+let num2 = 5;
+let string5 = "5";
+
+console.log(num2 != string5); // false (coerced to same value)
+```
+  - `===` (Strict Equality): Checks for both value and type equality.
+```JS
+console.log(num1 === string10); // false (different types)
+console.log(num2 !== string5); // true (different types)
+```
+  - `<` (Less Than): Checks if the left operand is less than the right.
+```JS
+console.log(num1 < num2); // false
+```
+  - `>` (Greater Than): Checks if the left operand is greater than the right.
+```JS
+console.log(num1 > num2); // true
+```
+  - `<=` (Less Than or Equal To): Checks if the left operand is less than or equal to the right.
+```JS
+console.log(num1 <= num2); // false
+```
+  - `>=` (Greater Than or Equal To): Checks if the left operand is greater than or equal to the right.
+```JS
+console.log(num1 >= num2); // true
+```
+
+### Logical Operators
+These operators combine boolean expressions.
+
+  - `&&` (AND): Returns `true` only if both operands are `true`.
+
+```JavaScript
+let isStudent = true;
+let hasPaid = true;
+
+console.log(isStudent && hasPaid); // true
+```
+  - `||` (OR): Returns `true` if at least one operand is `true`.
+
+```JavaScript
+let isLoggedIn = false;
+let isAdmin = true;
+
+console.log(isLoggedIn || isAdmin); // true
+```
+  - `!` (NOT): Reverses the boolean value of the operand.
+
+```JavaScript
+let isNight = false;
+
+console.log(!isNight); // true
+```
+### Assignment Operators
+These operators assign values to variables and can be shorthands for common operations.
+
+  - `=` (Assignment): Assigns the value of the right operand to the left operand.
+
+```JavaScript
+let age = 25;
+```
+  - `+=` (Add and Assign): Adds the right operand to the left operand and then assigns the result.
+
+```JavaScript
+age += 5; // age becomes 30
+```
+  - `-=` (Subtract and Assign): Subtracts the right operand from the left operand and then assigns the result.
+
+```JavaScript
+age -= 2; // age becomes 28
+```
+  - `*=` (Multiply and Assign): Multiplies the right operand by the left operand and then assigns the result.
+
+```JavaScript
+age *= 2; // age becomes 56
+```
+  - `/=` (Divide and Assign): Divides the left operand by the right operand and then assigns the result.
+
+```JavaScript
+age /= 7; // age becomes 8 (truncates decimals)
+```
+  - `%=` (Modulo and Assign): Performs a modulo operation (remainder) and assigns the result.
+
+```JavaScript
+let remainder = 10 % 3; // remainder becomes 1
+```
